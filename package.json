@@ -1,7 +1,8 @@
 {
-  "name": "synapse-scribble-backend",
+  "name": "candle-torque-atlas",
   "version": "0.1.0",
   "private": true,
+  "description": "Automotive brochure catalog for famous cars, supercars, and flagship bikes.",
   "scripts": {
     "dev": "next dev -p 3001",
     "build": "next build",
@@ -9,21 +10,15 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@next-auth/prisma-adapter": "^1.0.7",
     "autoprefixer": "^10.4.17",
-    "crypto-js": "^4.2.0",
     "next": "15.5.9",
-    "next-auth": "^4.24.12",
-    "nodemailer": "^7.0.11",
     "postcss": "^8.4.33",
     "react": "^18",
     "react-dom": "^18",
     "tailwindcss": "^3.4.1"
   },
   "devDependencies": {
-    "@types/crypto-js": "^4.2.2",
     "@types/node": "^20",
-    "@types/nodemailer": "^6.4.14",
     "@types/react": "^18",
     "@types/react-dom": "^18",
     "eslint": "^8",

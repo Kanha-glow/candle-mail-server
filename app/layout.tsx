@@ -1,13 +1,22 @@
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
+import { Bebas_Neue, Space_Grotesk } from 'next/font/google'
 import './globals.css'
-import { Providers } from './providers'
 
-const inter = Inter({ subsets: ['latin'] })
+const display = Bebas_Neue({
+  weight: '400',
+  subsets: ['latin'],
+  variable: '--font-display',
+})
+
+const body = Space_Grotesk({
+  subsets: ['latin'],
+  variable: '--font-body',
+})
 
 export const metadata: Metadata = {
-  title: 'Kanha Glow Mail Server ',
-  description: 'Backend administration panel for Synapse Scribble',
+  title: 'Candle Torque Atlas | Cars and Bikes Catalog',
+  description:
+    'Automotive brochure catalog featuring famous cars, supercars, and flagship bikes grouped by category.',
 }
 
 export default function RootLayout({
@@ -17,11 +26,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
-        <Providers>
-          {children}
-        </Providers>
-      </body>
+      <body className={`${display.variable} ${body.variable} antialiased`}>{children}</body>
     </html>
   )
 }
